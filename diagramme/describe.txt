@@ -1,0 +1,3 @@
+ce dossier contient les fichiers des diagrammes 
+cree avec draw.io et directement stocker via github
+je vais egalement y placer les fichiers jpeg des diagrammes
