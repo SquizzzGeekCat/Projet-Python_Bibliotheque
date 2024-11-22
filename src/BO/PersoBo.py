@@ -2,7 +2,6 @@ from AddressBo import Address
 from RoleBo import Role
 
 class Person:
-    # instance attributes
     def __init__(self,id_person, first_name, last_name, pseudo, date_birth, email, password, role: Role,address:Address, has_reserved = False,  statut="en attente"):
         self.id_person = id_person
         self.first_name = first_name
@@ -15,7 +14,22 @@ class Person:
         self.address = address
         self.has_reserved = has_reserved
         self.statut = statut
-
-    # instance method
+#getter and setter
+    @property
+    def first_name(self)->str:
+        return self.first_name
+    @first_name.setter
+    def first_name(self, value:str):
+        self.first_name = value
+        
+    @property
+    def last_name(self)->str:
+        return self.last_name
+    @last_name.setter
+    def last_name(self, value:str):
+        self.last_name = value
+        
+# methodes
     def introduced(self):
         return f"Hello, my name is {self.first_name} {self.last_name} and I live in {self.address}"
+
