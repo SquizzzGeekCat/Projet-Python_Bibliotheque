@@ -1,19 +1,23 @@
-from AddressBo import Address
 from RoleBo import Role
 
-class Person:
-    def __init__(self,id_person, first_name, last_name, pseudo, date_birth, email, password, role: Role,address:Address, has_reserved = False,  statut="en attente"):
+class User:
+    def __init__(self,id_person, first_name, last_name, pseudo, date_birth, email, password, role: Role, statut="en attente"):
+        # int
         self.id_person = id_person
+        # strings
         self.first_name = first_name
         self.last_name = last_name
         self.pseudo = pseudo
-        self.date_birth = date_birth
         self.email = email
         self.password = password
+        # entity
         self.role = role
-        self.address = address
-        self.has_reserved = has_reserved
+        # dates
+        self.date_birth = date_birth
+        # enum
         self.statut = statut
+        
+        
 #getter and setter
     @property
     def first_name(self)->str:

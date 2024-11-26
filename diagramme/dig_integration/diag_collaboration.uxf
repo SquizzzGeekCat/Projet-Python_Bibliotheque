@@ -1,0 +1,54 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLActor</id><coordinates><x>100</x><y>170</y><w>80</w><h>120</h></coordinates><panel_attributes>Utilisateur 
+général</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>190</y><w>100</w><h>40</h></coordinates><panel_attributes>logiciel 
+Bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>190</y><w>100</w><h>40</h></coordinates><panel_attributes>BDD/
+Serveur</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>190</y><w>260</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>190</y><w>230</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>180</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>220</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>180</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>220</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>100</y><w>160</w><h>60</h></coordinates><panel_attributes>valign=center
+halign=center
+
+1: connexion
+2: entrer login/password
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>260</y><w>200</w><h>70</h></coordinates><panel_attributes>valign=center
+halign=center
+
+8: donne accès au site
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>100</y><w>200</w><h>60</h></coordinates><panel_attributes>valign=center
+halign=center
+
+3 : demande si login existe
+5 : compare password
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>260</y><w>220</w><h>70</h></coordinates><panel_attributes>valign=center
+halign=center
+
+
+4: retroune true user existe
+6 : retourne true password
+7 : retourne validation connexion
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>0</y><w>240</w><h>50</h></coordinates><panel_attributes>valign=center
+halign=center
+Connexion site Bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>90</x><y>570</y><w>100</w><h>110</h></coordinates><panel_attributes>Administrateur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>590</y><w>100</w><h>40</h></coordinates><panel_attributes>logiciel 
+Bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>590</y><w>100</w><h>40</h></coordinates><panel_attributes>BDD/
+Serveur</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>590</y><w>230</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>590</y><w>270</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>580</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>620</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>580</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>620</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>510</y><w>200</w><h>60</h></coordinates><panel_attributes>valign=center
+halign=center
+
+1: récupère info user
+2: remplis le formulaire inscription
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>510</y><w>220</w><h>60</h></coordinates><panel_attributes>valign=center
+halign=center
+
+3 : demande si user existe
+5 : demande dreartion nouveau user
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>660</y><w>220</w><h>70</h></coordinates><panel_attributes>valign=center
+halign=center
+
+
+4: retroune false 
+6 : retourne infos nouveau user
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>660</y><w>180</w><h>70</h></coordinates><panel_attributes>valign=center
+halign=center
+
+8: affiche infos nouveau user
+/confirmation de creation
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>430</y><w>240</w><h>50</h></coordinates><panel_attributes>valign=center
+halign=center
+Creation d'utilisateur par admin</panel_attributes><additional_attributes></additional_attributes></element></diagram>
