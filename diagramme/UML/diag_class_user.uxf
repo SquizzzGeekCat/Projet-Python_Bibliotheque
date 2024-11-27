@@ -1,0 +1,87 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>270</x><y>670</y><w>150</w><h>170</h></coordinates><panel_attributes>UserModel
+--
+- id: int auto increment
+- firstName : str 
+- lastName : str
+- date_of_bird : date
+- pseudo : str unique
+- email: str
+- password : str
+- statu : str
+- role: int
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>420</y><w>150</w><h>140</h></coordinates><panel_attributes>UserRepository
+--
+
+--
+- createUser()
+- updateUser()
+- deleteUser()
+- selectUser(id)
+- selectAllUser()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>210</y><w>120</w><h>160</h></coordinates><panel_attributes>UserManager
+--
+
+--
+- login()
+- logout()
+- create_user()
+- update_user()
+- delete_user()
+- show_user(id)
+- show_all_user()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>10</y><w>150</w><h>190</h></coordinates><panel_attributes>User
+--
+- id: int auto increment
+- firstName : str 
+- lastName : str
+- date_of_bird : date
+- pseudo : str unique
+- email: str
+- status : str
+- role: Role
+--
+- setters
+- getters
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>670</y><w>150</w><h>70</h></coordinates><panel_attributes>RoleModel
+--
+- id: int auto increment
+- roleName : str
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>420</y><w>150</w><h>140</h></coordinates><panel_attributes>RoleRepository
+--
+
+--
+- createRole()
+- updateRole()
+- deleteRole()
+- selectRole(id)
+- selectAllRole()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>0</y><w>110</w><h>80</h></coordinates><panel_attributes>UserView
+--
+
+--
+- show_user()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>150</y><w>110</w><h>80</h></coordinates><panel_attributes>CreateUserView
+--
+
+--
+- create_user()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>60</y><w>230</w><h>80</h></coordinates><panel_attributes>UserControler
+--
+
+--
+- CreateUserView_to_UserManager()
+- UserManager_to_ShowUserView()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>10</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>100</y><w>150</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>70</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>310</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;110;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>300</y><w>90</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>70;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>130</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>550</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>550</y><w>40</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>20;120;10;10</additional_attributes></element></diagram>

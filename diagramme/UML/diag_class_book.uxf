@@ -1,0 +1,121 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>640</x><y>20</y><w>250</w><h>210</h></coordinates><panel_attributes>Book
+--
+- id: int auto increment
+- title: str
+- ISBN : str unique
+- adult_only: bolean
+- reserved : bolean
+- authors: list[author]
+- category: category
+- collection : collection
+- publisher: publisher
+- publish_at : date
+- create_at : date
+- archive_at:date</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>760</y><w>140</w><h>190</h></coordinates><panel_attributes>BookModel
+--
+- id: int auto increment
+- title: str
+- ISBN : str unique
+- adult_only: bolean
+- reserved : bolean
+- publish_at : date
+- create_at : date
+- archive_at:date
+--
+- getters
+- setters</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>0</y><w>110</w><h>80</h></coordinates><panel_attributes>BookView
+--
+
+--
+- createBook()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>130</y><w>110</w><h>80</h></coordinates><panel_attributes>BookView
+--
+
+--
+- showBook()
+- showAllBooks()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>50</y><w>240</w><h>100</h></coordinates><panel_attributes>BookControler
+--
+- view : UserView
+- entite : UserEntite
+--
+- createBookview_to_BookManager()
+- BookManager_to_showBookView()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>210</y><w>170</w><h>200</h></coordinates><panel_attributes>BookManager
+--
+
+--
+- createBook()
+- updateBook()
+- archiveBook()
+- SelectBookById()
+- SelectBookByTitle()
+- SelectBookByAuthor()
+- SelectBookByCollection()
+- SelectBookByCategory()
+- ShowBook()
+- ShowAllBook()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>470</y><w>170</w><h>220</h></coordinates><panel_attributes>BookRepository
+--
+- BookManager
+--
+- createBook()
+- updateBook()
+- archiveBook()
+- SelectBookById()
+- SelectBookByTitle()
+- SelectBookByAuthor()
+- SelectBookByCollection()
+- SelectBookByCategory()
+- selectAllBooks()
+- ShowBook()
+- ShowAllBook()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>760</y><w>140</w><h>110</h></coordinates><panel_attributes>AuthorModel
+--
+- id: int auto increment
+- name : str
+--
+- getNameAuthor()
+- setNameAuthor()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>760</y><w>140</w><h>100</h></coordinates><panel_attributes>CategoryModel
+--
+- id: int auto increment
+- name : str
+--
+- getNameCategory()
+- setNameCategory()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>760</y><w>140</w><h>100</h></coordinates><panel_attributes>CollectionModel
+--
+- id: int auto increment
+- name: str
+--
+- getNameCollection()
+- setNameCollection()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>470</y><w>170</w><h>160</h></coordinates><panel_attributes>AuthorRepository
+--
+
+--
+- CreateAuthor()
+- UpdateAuthor()
+- ArchiveAuthor()
+- SelectAuthorById()
+- SelectAllAuthors()
+- ShowAuthor()
+- ShowAllAuthors()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>470</y><w>170</w><h>150</h></coordinates><panel_attributes>CategoryRepository
+--
+
+--
+- CreateCategory()
+- UpdateCategory()
+- ArchiveCategory()
+- SelectAllCategory()
+- SelectCategoryById()
+- ShowAllCategory()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>470</y><w>170</w><h>160</h></coordinates><panel_attributes>CollectionRepository
+--
+
+--
+- CreateCollection()
+- UpdateCollection()
+- ArchiveCollection()
+- SelectCollectionById()
+- SelectAllCollection()
+- ShowCollection()
+- ShowAllCollection()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>330</y><w>190</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;140;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>400</y><w>60</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;70;40;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>400</y><w>80</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>60;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>320</y><w>260</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>240;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>80</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>140</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>30</y><w>200</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m2=0..n
+send data &gt;</panel_attributes><additional_attributes>180;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>100</y><w>200</w><h>100</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=0..1
+ask for data &gt;
+send data &lt;</panel_attributes><additional_attributes>10;80;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>680</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>620</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>610</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>620</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>620</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>680</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>610</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>620</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element></diagram>

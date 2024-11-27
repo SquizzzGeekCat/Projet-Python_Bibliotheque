@@ -29,12 +29,10 @@ def select_book_by_collection(collection):
     pass
 
 # create querie
-
 def insert_book(book):
     pass
 
 # update queries
-
 def update_book(id):
     pass
 
@@ -42,6 +40,5 @@ def update_book_return_date(id, return_date):
     pass
 
 # archive queries
-
 def archive_book_by_id(id):
     pass
