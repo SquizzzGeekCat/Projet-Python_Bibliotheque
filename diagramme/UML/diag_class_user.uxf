@@ -1,0 +1,110 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>80</x><y>660</y><w>150</w><h>170</h></coordinates><panel_attributes>UserModel
+--
+- id: int auto increment
+- firstName : str 
+- lastName : str
+- date_of_bird : date
+- pseudo : str unique
+- email: str
+- password : str
+- statu : str
+- role: int
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>500</y><w>150</w><h>130</h></coordinates><panel_attributes>UserRepository
+--
+
+--
+- create()
+- update()
+- delete0()
+- select(id)
+- selectAll()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>200</y><w>170</w><h>170</h></coordinates><panel_attributes>UserManager
+--
+- UserRepository : UserRepository
+- RoleRepository : RoleRepository
+--
+- login()
+- logout()
+- create_user()
+- update_user()
+- delete_user()
+- show_user(id)
+- show_all_user()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>0</y><w>150</w><h>190</h></coordinates><panel_attributes>User
+--
+- id: int auto increment
+- firstName : str 
+- lastName : str
+- date_of_bird : date
+- pseudo : str unique
+- email: str
+- status : str
+- role: Role
+--
+- setters
+- getters
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>680</y><w>150</w><h>70</h></coordinates><panel_attributes>RoleModel
+--
+- id: int auto increment
+- roleName : str
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>500</y><w>150</w><h>130</h></coordinates><panel_attributes>RoleRepository
+--
+
+--
+- create()
+- update()
+- delete()
+- select(id)
+- selectAll()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>0</y><w>110</w><h>80</h></coordinates><panel_attributes>UserView
+--
+
+--
+- show_user()
+- show_all_users()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>140</y><w>130</w><h>80</h></coordinates><panel_attributes>CreateUserView
+--
+
+--
+- Form_create_user()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>10</y><w>230</w><h>110</h></coordinates><panel_attributes>UserControler
+--
+- view : UserView
+- viewCreateUser : CreateUserView
+- model: User
+--
+- CreateUserView_to_UserManager()
+- UserManager_to_ShowUserView()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>10</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>260</y><w>150</w><h>130</h></coordinates><panel_attributes>IRepository
+--
+
+--
+- create()
+- update()
+- delete()
+- select(id)
+- selectAll()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>60</y><w>130</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>380</y><w>160</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;140;160</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>380</y><w>290</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;270;120</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>360</y><w>100</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;140;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>360</y><w>110</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>90;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>620</y><w>190</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>170;110;10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>620</y><w>170</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;130;150;130;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>110</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>50</y><w>130</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>110;50;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>260</y><w>150</w><h>120</h></coordinates><panel_attributes>AConnexion
+--
+ - host : str
+ - database : str
+ - user : str
+ - password : str
+--
+- connectBDD()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>370</y><w>100</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>360</y><w>240</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>220;10;10;140</additional_attributes></element></diagram>
