@@ -6,5 +6,5 @@ avec une connection a la base de donnée en python avec le module MySql connecte
 et avec l'affichage de l'interface en PyQt
 
 
-lienpour la maquette du projet v0:
-https://www.figma.com/design/L8pk4YqjwxPKw0VO2cD1hP/maquette---bibliotheque---python?node-id=0-1&t=hp70wljoyRGBMqPV-1
+lien pour la maquette du projet v1:
+https://www.figma.com/design/U16HP1m4Ba0RPthHytqWGY/projet-python?node-id=0-1&t=lxyhcCj0b5w5suxv-1
