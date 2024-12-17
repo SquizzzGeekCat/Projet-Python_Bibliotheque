@@ -3,7 +3,7 @@ from AuthorBo import Author
 from CollectionBo import Collection
 from PublisherBo import Publisher
 
-class Book:
+class BookEntities:
     def __init__(self,id_book, title, authors:list[Author], publication_date, ISBN, publisher:Publisher,collection:Collection, category:Category,created_date, archived_date, id_admin_archive, id_admin_create, reserved=False, disponible=True, adult_only=False):
         # les int
         self.id_book = id_book

@@ -65,15 +65,15 @@ CREATE TABLE Book(
    Adult_only BOOLEAN,
    Create_at DATE NOT NULL,
    Archive_at DATE,
-   Id_Administrator_Archive INT NOT NULL,
-   Id_Administrator_Create INT NOT NULL,
+   Id_Administrator INT NOT NULL,
+   Id_Administrator_1 INT NOT NULL,
    Id_Publisher INT NOT NULL,
    Id_Collection INT NOT NULL,
    Id_Category INT NOT NULL,
    PRIMARY KEY(Id_Book),
    UNIQUE(ISBN),
-   FOREIGN KEY(Id_Administrator_Archive) REFERENCES Administrator(Id_Administrator),
-   FOREIGN KEY(Id_Administrator_Create) REFERENCES Administrator(Id_Administrator),
+   FOREIGN KEY(Id_Administrator) REFERENCES Administrator(Id_Administrator),
+   FOREIGN KEY(Id_Administrator_1) REFERENCES Administrator(Id_Administrator),
    FOREIGN KEY(Id_Publisher) REFERENCES Publisher(Id_Publisher),
    FOREIGN KEY(Id_Collection) REFERENCES Collection(Id_Collection),
    FOREIGN KEY(Id_Category) REFERENCES Category(Id_Category)
@@ -81,13 +81,13 @@ CREATE TABLE Book(
 
 CREATE TABLE Borrow(
    Id_Borrow INT AUTO_INCREMENT,
-   Borrow_date DATE NOT NULL,
+   Borrow_date DATETIME NOT NULL,
+   Return_date DATETIME,
    Id_Book INT NOT NULL,
    Id_User INT NOT NULL,
    PRIMARY KEY(Id_Borrow),
    FOREIGN KEY(Id_Book) REFERENCES Book(Id_Book),
-   FOREIGN KEY(Id_User) REFERENCES User_(Id_User),
-   CONSTRAINT UK_reservation_id UNIQUE(Id_Book, Borrow_date)
+   FOREIGN KEY(Id_User) REFERENCES User_(Id_User)
 );
 
 CREATE TABLE Reservation(
@@ -96,13 +96,14 @@ CREATE TABLE Reservation(
    Id_User INT NOT NULL,
    Id_Book INT NOT NULL,
    PRIMARY KEY(Id_Reservation),
+   UNIQUE(Id_User),
    FOREIGN KEY(Id_User) REFERENCES User_(Id_User),
-   FOREIGN KEY(Id_Book) REFERENCES Book(Id_Book),
+   FOREIGN KEY(Id_Book) REFERENCES Book(Id_Book)
 );
 
 CREATE TABLE Modification(
    Id_Modification INT AUTO_INCREMENT,
-   date_modify DATE,
+   date_modify DATETIME,
    Id_Administrator INT NOT NULL,
    Id_Book INT NOT NULL,
    PRIMARY KEY(Id_Modification),
