@@ -5,9 +5,9 @@ def db_connexion():
     try:
         conn = mysql.connector.connect(
             host="localhost",          
-            user="root",   
-            password="",
-            database="biblio_python"
+            user="userLibrary",   
+            password="qazwsx00",
+            database="library_python"
         )
         if conn.is_connected():
             print("Connexion réussie à la base de données")

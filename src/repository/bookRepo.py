@@ -4,7 +4,7 @@ from connexionBDD import db_connexion
 def select_all_book():
     conn = db_connexion()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM book")  # Remplace par ta table
+    cursor.execute("SELECT * FROM book")  
     results = cursor.fetchall()
     
     for row in results:

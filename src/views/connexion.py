@@ -12,6 +12,7 @@ class LoginPage(QWidget):
     def initUI(self):
         # Créer une mise en page verticale
         layout = QVBoxLayout()
+        
 
         # Créer des labels et des champs d'entrée
         self.label1 = QLabel('Email:')
@@ -33,6 +34,7 @@ class LoginPage(QWidget):
 
         # Définir la mise en page de la fenêtre
         self.setLayout(layout)
+        
 
     def on_button_click(self):
         # Récupérer les valeurs des champs d'entrée
@@ -60,12 +62,14 @@ class HomePage(QWidget):
     def initUI(self):
         # Créer une mise en page verticale
         layout = QVBoxLayout()
+        
 
         # Créer un label
         self.label = QLabel('Bienvenue sur la page d\'accueil!')
 
         # Ajouter le label à la mise en page
         layout.addWidget(self.label)
+        
 
         # Créer un champ de recherche
         self.search_label = QLabel('Recherche:')
@@ -95,6 +99,8 @@ class MyApp(QWidget):
     def __init__(self):
         super().__init__()
         self.initUI()
+        
+        self.setGeometry(500, 500, 500, 500)
 
     def initUI(self):
         # Créer un QStackedWidget pour gérer les pages
@@ -115,7 +121,7 @@ class MyApp(QWidget):
 
         # Définir le titre et la taille de la fenêtre
         self.setWindowTitle('Mon Application PyQt')
-        self.setGeometry(300, 300, 300, 200)
+        
 
     def switch_to_home_page(self):
         self.stacked_widget.setCurrentWidget(self.home_page)
