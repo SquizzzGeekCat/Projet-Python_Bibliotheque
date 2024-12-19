@@ -4,7 +4,7 @@ from CollectionBo import Collection
 from PublisherBo import Publisher
 
 class BookEntities:
-    def __init__(self,id_book, title, authors:list[Author], publication_date, ISBN, publisher:Publisher,collection:Collection, category:Category,created_date, archived_date, id_admin_archive, id_admin_create, reserved=False, disponible=True, adult_only=False):
+    def __init__(self,id_book, title, authors:list[Author], publication_date, ISBN, publisher:Publisher,collection:Collection, category:Category,created_date, archived_date, id_admin_archive, id_admin_create, adult_only=False):
         # les int
         self.id_book = id_book
         self.id_admin_create = id_admin_create
@@ -14,7 +14,6 @@ class BookEntities:
         self.ISBN = ISBN
         # les booelan
         self.adult_only = adult_only
-        self.reserved = reserved
         # les dates
         self.publication_date = publication_date
         self.created_date = created_date

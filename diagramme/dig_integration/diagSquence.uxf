@@ -1,32 +1,106 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLGeneric</id><coordinates><x>370</x><y>70</y><w>180</w><h>30</h></coordinates><panel_attributes>Lociciel bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>680</x><y>70</y><w>100</w><h>30</h></coordinates><panel_attributes>Serveur/BDD</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>90</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>90</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>90</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>210</x><y>120</y><w>40</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>450</x><y>120</y><w>40</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>710</x><y>120</y><w>40</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>110</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-connexion</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>120</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-demande data user pour connexion</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>140</y><w>250</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
-comparer data transmises avec data
- stocker</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>150</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
-autorise connexion</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>180</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
-refuse connexion</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>380</x><y>440</y><w>180</w><h>30</h></coordinates><panel_attributes>Lociciel bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>680</x><y>440</y><w>100</w><h>30</h></coordinates><panel_attributes>Serveur/BDD</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>460</y><w>30</w><h>250</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>460</y><w>30</w><h>290</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>460</y><w>30</w><h>300</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;280</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>210</x><y>490</y><w>40</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>450</x><y>490</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>710</x><y>490</y><w>40</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>480</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-fait une recherche de livre</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>480</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-requete demande de data</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>520</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
-return liste</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>540</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
-return liste vide</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>510</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-affiche resultats</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>210</x><y>590</y><w>40</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>590</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-demande d'emprunt</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>450</x><y>590</y><w>40</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>710</x><y>590</y><w>40</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>590</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-vérification nombre emprunt</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>630</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
-validation emprunt</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>650</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
-refuse emprunt</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>620</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-affiche reponse</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>390</x><y>860</y><w>180</w><h>30</h></coordinates><panel_attributes>Lociciel bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>680</x><y>860</y><w>100</w><h>30</h></coordinates><panel_attributes>Serveur/BDD</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>880</y><w>30</w><h>240</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>880</y><w>30</w><h>240</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>880</y><w>30</w><h>240</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;220</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>210</x><y>900</y><w>40</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>460</x><y>900</y><w>40</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>710</x><y>990</y><w>40</w><h>100</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>900</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-demande emprunt</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>940</y><w>240</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
-reponse négative
-livre déjà emprunter</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>460</x><y>990</y><w>40</w><h>100</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>210</x><y>990</y><w>40</w><h>100</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>990</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-demande de reservation</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>990</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-Vérifiaction droit reservation</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>1030</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
-autorisation</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>1050</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
-refuse de la demande</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>1040</y><w>240</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-affichage de la reponse</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLActor</id><coordinates><x>190</x><y>790</y><w>80</w><h>110</h></coordinates><panel_attributes>Utilisateur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>190</x><y>370</y><w>80</w><h>110</h></coordinates><panel_attributes>Utilisateur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>190</x><y>0</y><w>80</w><h>110</h></coordinates><panel_attributes>Utilisateur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>470</x><y>510</y><w>260</w><h>60</h></coordinates><panel_attributes>Alt
-bg=yellow
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>180</x><y>150</y><w>310</w><h>70</h></coordinates><panel_attributes>Alt
-bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>460</x><y>630</y><w>260</w><h>60</h></coordinates><panel_attributes>Alt
-bg=yellow
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>480</x><y>1030</y><w>260</w><h>60</h></coordinates><panel_attributes>Alt
-bg=yellow
-</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>Relation</id><coordinates><x>410</x><y>990</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+validation emprunt</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>1060</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+refuse emprunt</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>1010</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+affiche reponse</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>1280</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+demande de reservation</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>1430</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+autorise reservation</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>1460</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+affichage de la reponse</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>390</x><y>820</y><w>320</w><h>300</h></coordinates><panel_attributes>Alt
+bg=gray
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+else</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>390</x><y>1260</y><w>320</w><h>280</h></coordinates><panel_attributes>Alt
+bg=gray
+--
+
+
+
+
+
+
+
+
+
+
+
+
+-.
+else</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>330</x><y>0</y><w>180</w><h>30</h></coordinates><panel_attributes>:Lociciel bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>630</x><y>0</y><w>100</w><h>30</h></coordinates><panel_attributes>:Serveur/BDD</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>20</y><w>30</w><h>1660</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1640</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>20</y><w>30</w><h>1660</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1640</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>20</y><w>30</w><h>1660</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;1640</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>60</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+demande acces</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>110</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+retourne formulaire de connexion</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>150</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+communique mdp/login</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>280</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+return True</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>380</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+return False</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>150</x><y>190</y><w>560</w><h>300</h></coordinates><panel_attributes>Alt
+bg=gray
+
+--
+
+
+
+
+
+
+
+
+
+-.
+else</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>290</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+autorise acces</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>400</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+refuse acces</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>500</y><w>260</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-
+recherche un livre
+via input recherche</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>520</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-
+envoi requete select</panel_attributes><additional_attributes>270;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>160</x><y>550</y><w>560</w><h>180</h></coordinates><panel_attributes>Alt
+bg=gray
+--
+
+
+
+
+
+
+-.
+else</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>620</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+return True</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>670</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+return False</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>630</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+retourne liste de correspondances</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>680</y><w>260</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+affiche un message
+aucune correspondance</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>840</y><w>220</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+demande d'emprunt</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>160</x><y>770</y><w>560</w><h>410</h></coordinates><panel_attributes>opt
+bg=pink
+--
+si livre disponible</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>400</x><y>860</y><w>290</w><h>60</h></coordinates><panel_attributes>ref
+bg=blue
+--
+Verifie nombre emprunt</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>400</x><y>930</y><w>290</w><h>60</h></coordinates><panel_attributes>ref
+bg=blue
+--
+Verifie statut</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>160</x><y>1200</y><w>560</w><h>410</h></coordinates><panel_attributes>opt
+bg=pink
+--
+si livre indisponible</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>410</x><y>1300</y><w>290</w><h>60</h></coordinates><panel_attributes>ref
+bg=blue
+--
+Verifie nombre emprunt</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>410</x><y>1370</y><w>290</w><h>60</h></coordinates><panel_attributes>ref
+bg=blue
+--
+Verifie droit de reservation</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>1490</y><w>290</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+refuse reservation</panel_attributes><additional_attributes>10;20;270;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>140</x><y>0</y><w>100</w><h>30</h></coordinates><panel_attributes>:Utilisateur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>410</x><y>200</y><w>290</w><h>60</h></coordinates><panel_attributes>ref
+bg=blue
+--
+check login/mdp</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>440</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+retourne formulaire de connexion</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>410</x><y>560</y><w>290</w><h>60</h></coordinates><panel_attributes>ref
+bg=blue
+--
+check si correspondance</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -31,7 +31,6 @@ class BookRepository:
             return [BookEntities(
                 book["id"],
                 book["title"],
-                book["author"],
                 book["category"],
                 book["publisher"],
                 book["publication_date"],

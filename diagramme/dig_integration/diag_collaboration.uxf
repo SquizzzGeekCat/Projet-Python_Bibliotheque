@@ -1,54 +1,26 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLActor</id><coordinates><x>100</x><y>170</y><w>80</w><h>120</h></coordinates><panel_attributes>Utilisateur 
-général</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>190</y><w>100</w><h>40</h></coordinates><panel_attributes>logiciel 
-Bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>190</y><w>100</w><h>40</h></coordinates><panel_attributes>BDD/
-Serveur</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>190</y><w>260</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>190</y><w>230</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>180</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>220</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>180</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>220</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>100</y><w>160</w><h>60</h></coordinates><panel_attributes>valign=center
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLActor</id><coordinates><x>160</x><y>280</y><w>80</w><h>120</h></coordinates><panel_attributes>Utilisateur 
+général</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>340</y><w>480</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>460;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>0</y><w>240</w><h>50</h></coordinates><panel_attributes>valign=center
 halign=center
-
-1: connexion
-2: entrer login/password
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>260</y><w>200</w><h>70</h></coordinates><panel_attributes>valign=center
-halign=center
-
-8: donne accès au site
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>100</y><w>200</w><h>60</h></coordinates><panel_attributes>valign=center
-halign=center
-
-3 : demande si login existe
-5 : compare password
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>260</y><w>220</w><h>70</h></coordinates><panel_attributes>valign=center
-halign=center
-
-
-4: retroune true user existe
-6 : retourne true password
-7 : retourne validation connexion
-
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>0</y><w>240</w><h>50</h></coordinates><panel_attributes>valign=center
-halign=center
-Connexion site Bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>90</x><y>570</y><w>100</w><h>110</h></coordinates><panel_attributes>Administrateur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>590</y><w>100</w><h>40</h></coordinates><panel_attributes>logiciel 
-Bibliothèque</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>590</y><w>100</w><h>40</h></coordinates><panel_attributes>BDD/
-Serveur</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>590</y><w>230</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>590</y><w>270</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>580</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>620</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>580</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>620</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>510</y><w>200</w><h>60</h></coordinates><panel_attributes>valign=center
-halign=center
-
-1: récupère info user
-2: remplis le formulaire inscription
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>510</y><w>220</w><h>60</h></coordinates><panel_attributes>valign=center
-halign=center
-
-3 : demande si user existe
-5 : demande creation nouveau user
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>660</y><w>220</w><h>70</h></coordinates><panel_attributes>valign=center
-halign=center
-
-
-4: retroune false 
-6 : retourne infos nouveau user
-
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>660</y><w>180</w><h>70</h></coordinates><panel_attributes>valign=center
-halign=center
-
-8: affiche infos nouveau user
-/confirmation de creation
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>430</y><w>240</w><h>50</h></coordinates><panel_attributes>valign=center
-halign=center
-Creation d'utilisateur par admin</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+Diagramme de collaboration</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>350</y><w>100</w><h>30</h></coordinates><panel_attributes>:Controleur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1110</x><y>350</y><w>100</w><h>30</h></coordinates><panel_attributes>:BDD</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>360</y><w>440</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;420;10</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>340</y><w>450</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>430;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>330</x><y>240</y><w>170</w><h>90</h></coordinates><panel_attributes>1: Demande connexion
+4: retourne infos connexion
+8: envoye recherche livre
+12: demande emprunt
+18: demande reservation
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>310</x><y>400</y><w>240</w><h>170</h></coordinates><panel_attributes>2: Demande login/mdp
+6.a: if = true :donne acces
+6.b: if =false: refuse acces
+6.c: if=false: redemande login/mdp
+10.a:if = true : retourne liste livres
+10.b:if = false: retourne message erreur
+15.a : if true dispo: enregistre emprunt
+15.b: if false dispo: retourne un message
+21.a : if true resa: enregistre reservation
+21.b: if false resa: retourne un message</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>0</x><y>330</y><w>160</w><h>80</h></coordinates><panel_attributes>3: saisie
+7: saisi nom livre
+11: click bouton emprunt
+17: click bouton reservation</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>810</x><y>240</y><w>210</w><h>70</h></coordinates><panel_attributes>5: if: check login/mdp
+9: check : if livre existe
+13.b: check: if nombre emprunt &lt;3
+13.c: check: if statut = actif</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>340</y><w>360</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>340;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>360</y><w>320</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;300;10</additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>340</y><w>330</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>310;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>820</x><y>390</y><w>170</w><h>60</h></coordinates><panel_attributes>5.a: retourne reponse
+9.a: retourne reponse
+13.1: retourne reponse</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>370</y><w>30</w><h>290</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;270</additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>640</y><w>100</w><h>30</h></coordinates><panel_attributes>:Emprunt</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>750</x><y>590</y><w>200</w><h>30</h></coordinates><panel_attributes>13: check: if livre dispo (dispo)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>540</x><y>590</y><w>170</w><h>30</h></coordinates><panel_attributes>14: retourne reponse</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>110</y><w>30</w><h>260</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;240</additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>90</y><w>100</w><h>30</h></coordinates><panel_attributes>:Reservation</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>780</x><y>130</y><w>220</w><h>30</h></coordinates><panel_attributes>19: check: if livre reserver (resa)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>510</x><y>130</y><w>170</w><h>30</h></coordinates><panel_attributes>20. retourne reponse</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>130</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>420</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>420</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>130</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element></diagram>
