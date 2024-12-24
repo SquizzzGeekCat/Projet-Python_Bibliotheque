@@ -4,11 +4,9 @@ from src.entities.CollectionBo import Collection
 from src.entities.PublisherBo import Publisher
 
 class BookEntity:
-    def __init__(self,id_book, title, authors:list[Author], publication_date, ISBN, publisher:Publisher,collection:Collection, category:Category,created_date, archived_date, id_admin_archive, id_admin_create, adult_only=False):
+    def __init__(self,id_book, title,  publication_date, ISBN,authors=None, publisher:Publisher=None,collection:Collection=None, category:Category=None, adult_only=False):
         # les int
         self.id_book = id_book
-        self.id_admin_create = id_admin_create
-        self.id_admin_archive = id_admin_archive
         # les strings
         self.title = title
         self.ISBN = ISBN
@@ -16,8 +14,6 @@ class BookEntity:
         self.adult_only = adult_only
         # les dates
         self.publication_date = publication_date
-        self.created_date = created_date
-        self.archive_date = archived_date
         # les entites
         self.publisher = publisher
         self.authors = authors
