@@ -1,9 +1,9 @@
-from CategoryBo import Category
-from AuthorBo import Author
-from CollectionBo import Collection
-from PublisherBo import Publisher
+from src.entities.CategoryBo import Category
+from src.entities.AuthorBo import Author
+from src.entities.CollectionBo import Collection
+from src.entities.PublisherBo import Publisher
 
-class BookEntities:
+class BookEntity:
     def __init__(self,id_book, title, authors:list[Author], publication_date, ISBN, publisher:Publisher,collection:Collection, category:Category,created_date, archived_date, id_admin_archive, id_admin_create, adult_only=False):
         # les int
         self.id_book = id_book
