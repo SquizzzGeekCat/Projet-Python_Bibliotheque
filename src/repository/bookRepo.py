@@ -42,7 +42,7 @@ class BookRepository:
             return [BookEntity(
                     id_book = book["Id_Book"],
                     title = book["Title"],
-                    publication_date = book["Publich_at"],
+                    publication_date = book["Publiched_at"],
                     ISBN = book["ISBN"],
                     authors = AuthorEntity(book["Id_Author"], book["Name_Author"]),
                     publisher = PublisherEntity(book["Id_Publisher"], book["Name_Publisher"]),
@@ -53,7 +53,36 @@ class BookRepository:
         except Error as e:
             print(f"Erreur lors de la récupération des livres : {e}")
             return []
+        finally:
+            cursor.close()
+            print("Connexion à la base de données fermée")
 
+    def archived_book(self, id_book, date_archived):
+        #TODO: a tester
+        query = """UPDATE book SET Archived_at=%s WHERE Id_Book = %s"""
+        try:
+            cursor = self.conn.cursor()
+            cursor.execute(query, (date_archived,id_book))
+            self.conn.commit()
+            print("Livre archivé avec succès")
+        except Error as e:
+            print(f"Erreur lors de l'archivage du livre : {e}")
+        finally:
+            cursor.close()
+            print("Connexion à la base de données fermée")
+    def create_book(self):
+        #TODO :  a completer
+        query = """INSERT INTO `book`
+        (`Title`, 
+        `Publiched_at`, 
+        `ISBN`, 
+        `Adult_only`, 
+        `Created_at`, 
+        `Id_Administrator_creation`, 
+        `Id_Publisher`, 
+        `Id_Collection`, 
+        `Id_Category`) 
+        VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]','[value-9]')"""
     def __del__(self):
         """
         Ferme la connexion à la base de données.
