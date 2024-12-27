@@ -1,4 +1,4 @@
-class Author:
+class AuthorEntity:
     def __init__(self,id_autor, name):
         self.id_autor = id_autor
         self.name = name

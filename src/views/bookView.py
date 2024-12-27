@@ -18,8 +18,8 @@ class BookView(QWidget):
         
         # Configurer le tableau
         self.table_results = QTableWidget(self)
-        self.table_results.setColumnCount(6)
-        self.table_results.setHorizontalHeaderLabels(['Titre', 'Publier le', 'ISBN', 'Editeur','Collection', 'Categorie'])
+        self.table_results.setColumnCount(7)
+        self.table_results.setHorizontalHeaderLabels(['Titre', 'Publier le', 'ISBN','Auteur', 'Editeur','Collection', 'Categorie'])
         
         # Ajouter les widgets à la mise en page
         layout.addWidget(self.label)
@@ -40,11 +40,12 @@ class BookView(QWidget):
             row_position = self.table_results.rowCount()
             self.table_results.insertRow(row_position)
             self.table_results.setItem(row_position, 0, QTableWidgetItem(book.title))
-            self.table_results.setItem(row_position, 1, QTableWidgetItem(book.publication_date.strftime('%d-%m-%Y')))
+            self.table_results.setItem(row_position, 1, QTableWidgetItem(book.publication_date.strftime('%d/%m/%Y')))
             self.table_results.setItem(row_position, 2, QTableWidgetItem(book.ISBN))
-            self.table_results.setItem(row_position, 3, QTableWidgetItem(book.publisher))
-            self.table_results.setItem(row_position, 4, QTableWidgetItem(book.collection))
-            self.table_results.setItem(row_position, 5, QTableWidgetItem(book.category))
+            self.table_results.setItem(row_position, 3, QTableWidgetItem(book.authors.name))
+            self.table_results.setItem(row_position, 4, QTableWidgetItem(book.publisher.name))
+            self.table_results.setItem(row_position, 5, QTableWidgetItem(book.collection.name))
+            self.table_results.setItem(row_position, 6, QTableWidgetItem(book.category.name))
             
             
     def connect_btn(self, controller):
