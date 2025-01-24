@@ -1,3 +1,4 @@
+import bcrypt
 from src.entities.UserEntity import UserEntity
 
 class UserManager:
@@ -16,11 +17,14 @@ class UserManager:
     #     return self.repo.get_user_by_id(user_id)
     
     def create_user(self, data):
+        password = data["password"]
+        # Hasher le mot de passe
+        hashed_password = self.hash_password(password)
         user = UserEntity(
                 first_name=data["first_name"],
                 last_name=data["last_name"],
                 email=data["email"],
-                password=data["password"],
+                password=hashed_password,
                 pseudo=data["pseudo"],
                 date_birth=data["birth_date"],
                 statut=data["statut"],
@@ -32,4 +36,28 @@ class UserManager:
         else:
             user.id_person = user_id
             return user
-        
+    
+    def login(self, data:dict):
+        password = data["password"]
+        password = self.hash_password(password)
+        print(password)
+        return self.repo.login(data)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    # Hasher le mot de passe
+    def hash_password(self, password: str) -> bytes:
+        # Encoder le mot de passe en bytes
+        password_bytes = password.encode('utf-8')
+        # Générer un sel
+        salt = bcrypt.gensalt()
+        # Hasher le mot de passe avec le sel
+        hashed = bcrypt.hashpw(password_bytes, salt)
+        return hashed

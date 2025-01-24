@@ -1,7 +1,7 @@
 from src.entities.RoleEntity import RoleEntity
 
 class UserEntity:
-    def __init__(self, first_name, last_name, pseudo, date_birth, email, password, statut="en attente", id_person=None):
+    def __init__(self, first_name, last_name, pseudo, date_birth, email, password, role, statut="en attente", id_person=None):
         # int
         self.id_person = id_person
         # strings
@@ -11,7 +11,7 @@ class UserEntity:
         self.email = email
         self.password = password
         # entity
-        #self.role = role
+        self.role = role
         # dates
         self.date_birth = date_birth
         # enum

@@ -20,3 +20,19 @@ class UserController:
         else: 
             message = "Veuillez remplir tous les champs obligatoires"
             return self.view.showMessage(message)
+        
+    def login(self):
+        email = self.view.get_email()
+        password = self.view.get_pass()
+        data ={"email" : email, "password" : password}
+        user = self.manager.login(data)
+        if user:
+            if user.role == "user":
+                message = f"Bienvenue {user.first_name} !"
+                self.view.redirectToUserDashbord(user.pseudo,message)
+            else:
+                message = f"Bienvenue Administrateur!"
+                self.view.redirectToAdminDashbord(user.pseudo,message)
+        else:
+            message = "Email ou mot de passe incorrect"
+            self.view.showMessage(message)

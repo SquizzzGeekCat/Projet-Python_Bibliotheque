@@ -1,20 +1,35 @@
 import sys
 from PyQt5.QtWidgets import QApplication
 
-
-from src.views.createUserView import AdminCreateUserView
+from src.views.loginView import LoginView
 from src.controllers.userController import UserController
 from src.repository.userRepo import UserRepo
 from src.managers.userManager import UserManager
+
 if __name__ == "__main__":
     
      app = QApplication(sys.argv)
      repo = UserRepo()
      manager = UserManager(repo)
-     view = AdminCreateUserView()
+     view = LoginView()
      controller = UserController(view,manager)
      view.show()
      sys.exit(app.exec_())
+
+
+# from src.views.createUserView import AdminCreateUserView
+# from src.controllers.userController import UserController
+# from src.repository.userRepo import UserRepo
+# from src.managers.userManager import UserManager
+# if __name__ == "__main__":
+    
+#      app = QApplication(sys.argv)
+#      repo = UserRepo()
+#      manager = UserManager(repo)
+#      view = AdminCreateUserView()
+#      controller = UserController(view,manager)
+#      view.show()
+#      sys.exit(app.exec_())
 
 
 ### pour creation autour du livre
