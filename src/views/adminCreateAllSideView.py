@@ -1,6 +1,4 @@
-import sys
 from PyQt5.QtWidgets import QWidget,QVBoxLayout, QLineEdit, QPushButton, QLabel, QMessageBox
-from src.entities.AuthorEntity import AuthorEntity
 
 class AdminView(QWidget):
     def __init__(self):

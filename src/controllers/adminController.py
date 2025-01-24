@@ -1,5 +1,3 @@
-from src.entities.AuthorEntity import AuthorEntity
-
 class AdminController:
     def __init__(self, view, adminManager):
         self.view = view
