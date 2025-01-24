@@ -1,4 +1,4 @@
-from RoleBo import Role
+from entities.RoleEntity import Role
 
 class User:
     def __init__(self,id_person, first_name, last_name, pseudo, date_birth, email, password, role: Role, statut="en attente"):

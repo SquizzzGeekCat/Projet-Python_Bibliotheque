@@ -1,7 +1,7 @@
-from src.entities.CategoryBo import CategoryEntity as Category
-from src.entities.AuthorBo import AuthorEntity as Authors
-from src.entities.CollectionBo import CollectionEntity as Collection
-from src.entities.PublisherBo import PublisherEntity as Publisher
+from entities.CategoryEntity import CategoryEntity as Category
+from entities.AuthorEntity import AuthorEntity as Authors
+from entities.CollectionEntity import CollectionEntity as Collection
+from entities.PublisherEntity import PublisherEntity as Publisher
 
 class BookEntity:
     def __init__(self,id_book, title,  publication_date, ISBN,authors:Authors=None, publisher:Publisher=None,collection:Collection=None, category:Category=None, adult_only=False):

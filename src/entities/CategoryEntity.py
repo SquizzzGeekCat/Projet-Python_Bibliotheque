@@ -1,5 +1,5 @@
 class CategoryEntity:
-    def __init__(self, id_category, name):
+    def __init__(self,name, id_category=None ):
         self.id_categorie = id_category
         self.name = name
         

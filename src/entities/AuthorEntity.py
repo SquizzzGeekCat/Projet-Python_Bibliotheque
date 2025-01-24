@@ -1,5 +1,5 @@
 class AuthorEntity:
-    def __init__(self,id_autor, name):
+    def __init__(self,name, id_autor = None ):
         self.id_autor = id_autor
         self.name = name
         

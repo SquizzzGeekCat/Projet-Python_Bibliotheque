@@ -16,6 +16,7 @@ class BookView(QWidget):
         # Créer un bouton
         self.search_button = QPushButton('voir les livres')
         
+        
         # Configurer le tableau
         self.table_results = QTableWidget(self)
         self.table_results.setColumnCount(7)
@@ -51,4 +52,5 @@ class BookView(QWidget):
     def connect_btn(self, controller):
         self.initUI()
         self.search_button.clicked.connect(controller.get_books_by_name)
+        
         

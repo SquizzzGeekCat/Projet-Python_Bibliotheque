@@ -3,10 +3,10 @@ import mysql.connector
 
 from mysql.connector import Error
 from src.entities.BookEntity import BookEntity
-from src.entities.AuthorBo import AuthorEntity
-from src.entities.PublisherBo import PublisherEntity
-from src.entities.CategoryBo import CategoryEntity
-from src.entities.CollectionBo import CollectionEntity
+from entities.AuthorEntity import AuthorEntity
+from entities.PublisherEntity import PublisherEntity
+from entities.CategoryEntity import CategoryEntity
+from entities.CollectionEntity import CollectionEntity
 class BookRepository:
     def __init__(self):
         try:
@@ -38,7 +38,6 @@ class BookRepository:
             cursor = self.conn.cursor(dictionary=True)
             cursor.execute(query, ('%' + titleInput + '%',))
             books = cursor.fetchall()
-            print(books)
             return [BookEntity(
                     id_book = book["Id_Book"],
                     title = book["Title"],
@@ -70,9 +69,8 @@ class BookRepository:
         finally:
             cursor.close()
             print("Connexion à la base de données fermée")
-    def create_book(self):
-        #TODO :  a completer
-        query = """INSERT INTO `book`
+    def create_book(self, book_entity):
+        query = """INSERT INTO book
         (`Title`, 
         `Publiched_at`, 
         `ISBN`, 
@@ -81,8 +79,20 @@ class BookRepository:
         `Id_Administrator_creation`, 
         `Id_Publisher`, 
         `Id_Collection`, 
-        `Id_Category`) 
-        VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]','[value-7]','[value-8]','[value-9]')"""
+        `Id_Category`) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+        
+        values = (book_entity.title,book_entity.publiched_at,book_entity.ISBN,book_entity.Adult_only, book_entity.Creates_at,book_entity.Id_Administrator_creation,book_entity.Id_Publisher,book_entity.Id_Collection,book_entity.Id_Category)
+        
+        try:
+            cursor = self.conn.cursor()
+            cursor.execute(query, values)
+            self.conn.commit()
+            print("Livre créé avec succès")
+            return cursor.lastrowid
+        except Error as e:
+            print(f"Erreur lors de l'ajout du livre : {e}")
+            return None
+        
     def __del__(self):
         """
         Ferme la connexion à la base de données.
