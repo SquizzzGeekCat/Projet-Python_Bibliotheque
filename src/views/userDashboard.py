@@ -17,4 +17,4 @@ class UserDashboard(QWidget):
         self.setLayout(layout)
 
         # Définir les propriétés de la fenêtre
-        self.setWindowTitle('Admin Dashboard')
+        self.setWindowTitle('User Dashboard')

@@ -46,7 +46,6 @@ class UserRepo:
             cursor.execute(query, values)
             user = cursor.fetchone()
             if user:
-                print(user)
                 # Vérifier le mot de passe haché
                 if bcrypt.checkpw(data["password"].encode('utf-8'), user["Password"].encode('utf-8')):
                     print(f"Connexion réussie pour l'utilisateur {user['Firstname']}")
